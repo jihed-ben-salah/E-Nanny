@@ -1,0 +1,2322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>activiteloisirs</class>
+ <widget class="QDialog" name="activiteloisirs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1104</width>
+    <height>718</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>E_Nanny</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/img/fadhel.png);</string>
+  </property>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>70</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/img/rv.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>120</y>
+     <width>1131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>170</y>
+     <width>991</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 2px solid#C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width:20ex;
+    padding: 2px;
+     font: bold, &quot;Comic Sans MS&quot;;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fade02, stop: 0.4 #fade02,
+                                stop: 0.5 #fade02, stop: 1.0 #fade02);
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Activite</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>971</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 2px solid#C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width:20ex;
+    padding: 2px;
+     font: bold, &quot;Comic Sans MS&quot;;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #085394, stop: 0.4 #085394,
+                                stop: 0.5 #085394, stop: 1.0 #085394);
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Ajouter une activité</string>
+      </attribute>
+      <widget class="QPushButton" name="ajout">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>280</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Comic Sans MS</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>170</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>prenom</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="idajout">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>90</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>210</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>adresse</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>190</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Comic Sans MS</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>telephone</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>110</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Comic Sans MS</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>prix</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>id</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>130</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>nom</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prenomajout">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>170</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prixajout">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>110</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="adresseajout">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>210</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nomajout">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>130</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="telephoneajout">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>190</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Afficher les activés</string>
+      </attribute>
+      <widget class="QTableView" name="tabactivite">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>60</y>
+         <width>381</width>
+         <height>241</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tri_Activite">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>320</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Trier par prix</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="recherche_activite">
+       <property name="geometry">
+        <rect>
+         <x>262</x>
+         <y>20</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="recherche">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Recherche</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>190</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>prix</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>100</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>160</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>adresse</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="telmodifier">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>220</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="adressemodifier">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>160</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nommodifier">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>100</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>220</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>telephone</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>130</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>prenom</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prixmodifier">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>190</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prenommodifier">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>130</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>70</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>id</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="modifier">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>270</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sup">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>310</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="idmodifier">
+       <property name="geometry">
+        <rect>
+         <x>682</x>
+         <y>70</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Excel">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>350</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Excel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="imprimer">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>350</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Imprimer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tri_id_activite">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>320</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Trier par id</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tri_activite_nom">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>320</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Trier par nom</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Bloc note</string>
+      </attribute>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>841</width>
+         <height>341</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="save_as">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>80</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Enregistrer sous</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="copy">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>140</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Copier</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="paste">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>200</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Coller</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="open">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>50</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Ouvrir</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="undo">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>230</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Annuler</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="exit">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>320</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Quitter</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Nouveau</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cut">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>170</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Couper</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="print">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>290</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>imprimer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="save">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>110</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Enregistrer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="redo">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>260</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Refaire</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>RendezVous</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>951</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 2px solid#C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width:20ex;
+    padding: 2px;
+     font: bold, &quot;Comic Sans MS&quot;;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #085394, stop: 0.4 #085394,
+                                stop: 0.5 #085394, stop: 1.0 #085394);
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_7">
+      <attribute name="title">
+       <string>Ajouter un rendezvous</string>
+      </attribute>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>id</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_rdv_ajout">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>80</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_activite_ajout">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>110</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>email</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>id-activite</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>profession</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nom_rdv_ajout">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>140</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="email_rdv_ajout">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>200</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="pro_rdv_ajout">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>230</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="heure_rdv_ajout">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>180</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="date_rdv_ajout">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>150</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tel_rdv_ajout">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>120</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>prenom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>180</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>heure</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>150</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>date_rdv</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>120</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>telephone</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Ajout_rdv">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>270</y>
+         <width>291</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>110</y>
+         <width>181</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+color: black;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>170</y>
+         <width>181</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+color: black;
+text-align:center;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_8">
+      <attribute name="title">
+       <string>Afficher les rendezvous</string>
+      </attribute>
+      <widget class="QTableView" name="tabrdv">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>60</y>
+         <width>381</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_activite_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>50</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nom_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>80</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>200</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>heure</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>170</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>pro_rdv</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>140</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>email</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>50</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>id_activite</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prenom_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>110</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="email_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>140</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>80</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>20</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>id</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="heure_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>200</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>230</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>date_rdv</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="tel_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>260</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>110</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>prenom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>260</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: #fade02;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>telephone</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="date_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>230</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="pro_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>170</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Modifier_rdv">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>300</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Supprimer_rdv">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>330</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Recherche_rdv">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>20</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Recherche</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tri_rdv">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>350</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Trier par date</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_rdv_modifier">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>20</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="tri_rdv_id">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>320</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Trier par id</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Tri_nom_rdv">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>350</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+       </property>
+       <property name="text">
+        <string>Trier par nom</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>50</y>
+     <width>1131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>70</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/img/home.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>70</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/img/recl.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>70</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/img/profil.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>90</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+   </property>
+   <property name="text">
+    <string>on</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>90</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+padding: 0 8px;
+background: #085394;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+   </property>
+   <property name="text">
+    <string>off</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="slidervolume">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>160</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: blue;
+</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
